@@ -1,30 +1,37 @@
-import { useState } from 'react'
-import viteLogo from '/vite.svg'
+import Main from "./core/home.component";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
+      <div className="relative flex flex-col min-h-screen bg-[#809AEC]">
+        <header className="w-full py-8 flex flex-row justify-between px-12 text-white">
+          <h1 className="text-2xl font-bold font-title">The English Crab</h1>
+          <nav className="flex space-x-8 text-lg">
+            <button className="mt-6 px-6 py-3 bg-white text-[#809AEC] font-bold rounded-lg shadow-md hover:shadow-lg hover:bg-gray-100">
+              Inicio
+            </button>
+            <button className="mt-6 px-6 py-3 bg-white text-[#809AEC] font-bold rounded-lg shadow-md hover:shadow-lg hover:bg-gray-100">
+              Cursos
+            </button>
+            <button className="mt-6 px-6 py-3 bg-white text-[#809AEC] font-bold rounded-lg shadow-md hover:shadow-lg hover:bg-gray-100">
+              Unirse
+            </button>
+            <button className="mt-6 px-6 py-3 bg-white text-[#809AEC] font-bold rounded-lg shadow-md hover:shadow-lg hover:bg-gray-100">
+              Entrar
+            </button>
+          </nav>
+        </header>
+
+        <main className="relative flex-grow">
+          <Main />
+        </main>
+
+        <footer className="w-full text-center py-6 bg-blue-700 text-white">
+          <p>Made by a Squid</p>
+        </footer>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

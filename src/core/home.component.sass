@@ -1,0 +1,42 @@
+section
+    height: 100vh
+    width: 100%
+    position: fixed
+    top: 0
+    left: 0
+
+.shore-layer
+    position: absolute
+    top: 0
+    left: 0
+    height: 100vh
+    width: 100%
+    background-repeat: no-repeat
+    animation: wave 6s cubic-bezier(0.28, 0, 0.41, 1) infinite
+
+.layer1
+    background-image: url(./home-files/white-shore-1.svg)
+    background-size: 70%
+    background-position: 126% 15%
+
+.layer2
+    background-image: url(./home-files/white-shore-2.svg)
+    background-size: 68%
+    background-position: 128% 15%
+
+.layer3
+    background-image: url(./home-files/sandy-shore.svg)
+    background-size: 65%
+    background-position: 130% 15%
+
+@keyframes wave
+    0%
+        background-position: 126% 15%, 128% 15%, 130% 15%
+    25%
+        background-position: 129% 15%, 131% 15%, 133% 15%
+    50%
+        background-position: 132% 15%, 134% 15%, 136% 15%
+    75%
+        background-position: 129% 15%, 131% 15%, 133% 15%
+    100%
+        background-position: 126% 15%, 128% 15%, 130% 15%
