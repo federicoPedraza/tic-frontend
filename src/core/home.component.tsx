@@ -9,7 +9,7 @@ const Home: FC = () => (
     <img
       src="icon.png"
       alt="Icono de The English Crab"
-      className="absolute z-50 top-1/2 left-3/4 transform -translate-x-1/8 -translate-y-3/4 size-72"
+      className="absolute z-50 top-1/2 left-3/4 transform -translate-x-1/2 -translate-y-1/2 w-24"
     />
   </section>
 );
