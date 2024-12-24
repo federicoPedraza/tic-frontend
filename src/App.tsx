@@ -7,8 +7,9 @@ function App() {
   return (
     <div className="relative flex flex-col min-h-screen bg-vista-blue">
       <header className="sticky top-0 z-50 w-full py-8 flex flex-row justify-end px-12">
-        <nav className="flex space-x-8 text-lg">
-          <Button label="Inicio" />
+        <nav className="flex space-x-8">
+          <Button label="Cursos" />
+          <Button label="Contacto" />
         </nav>
       </header>
 
