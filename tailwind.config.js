@@ -12,6 +12,7 @@ export default {
       },
       fontFamily: {
         title: ["title", "sans-serif"],
+        body: ["body", "sans-serif"]
       },
     },
   },

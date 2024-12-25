@@ -14,7 +14,7 @@ function App() {
       </header>
 
       <main className="flex flex-col h-screen">
-        <section className="h-[140vh]">
+        <section className="h-[180vh]">
           <Home />
         </section>
 
