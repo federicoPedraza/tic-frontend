@@ -9,6 +9,12 @@
     font-style: normal
 
 @font-face
+    font-family: 'impact'
+    src: url('./assets/fonts/impact.ttf') format('truetype')
+    font-weight: normal
+    font-style: normal
+
+@font-face
     font-family: 'body'
     src: url('./assets/fonts/ubuntu.ttf') format('truetype')
     font-weight: normal
@@ -18,5 +24,26 @@
 body
     @apply w-full h-full text-jet
 
+h1
+    @apply font-title drop-shadow-md
+
 span, p
-    @apply font-body
+    @apply font-body drop-shadow-xl
+
+.text-outlined
+    text-shadow: -1px -1px 0 #333333, 1px -1px 0 #333333, -1px 1px 0 #333333, 1px 1px 0 #333333
+
+home
+    background: url('/crab-pattern.png') repeat fixed, #ffffff
+    background-size: cover
+    background-blend-mode: multiply
+    opacity: 1
+    height: 100%
+    display: flex
+    flex-direction: row
+    justify-content: center
+    gap: 52px
+    padding: 2rem 0
+    align-items: stretch
+    position: relative
+    overflow: hidden

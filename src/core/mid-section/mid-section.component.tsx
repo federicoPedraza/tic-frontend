@@ -3,7 +3,7 @@ import "./mid-section.component.sass";
 import Feature from "../../feature/feature.component";
 
 const MidSection: FC = () => (
-  <section className="bg-lavender-pink h-full flex flex-row justify-center gap-32 py-8 items-stretch">
+  <section className="pink-background">
     <Feature
       label="Cursos Interactivos"
       description="Materiales dinámicos para aprender inglés de forma práctica"
