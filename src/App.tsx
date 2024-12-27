@@ -6,7 +6,7 @@ import "./App.sass"
 
 function App() {
   return (
-    <div className="crab-background relative flex flex-col min-h-screen">
+    <div className="crab-background relative flex flex-col">
       <header className="sticky top-0 z-50 w-full py-8 flex flex-row justify-between items-center px-12">
         <h1 className="text-white text-4xl font-bold font-title">The English Crab</h1>
         <nav className="flex space-x-8">
@@ -15,16 +15,16 @@ function App() {
         </nav>
       </header>
 
-      <main className="flex flex-col h-screen">
-        <section className="h-[180vh]">
+      <main className="flex flex-col">
+        <section className="h-[60vh]">
           <Home />
         </section>
 
-        <section className="h-[40vh]">
+        <section className="h-[35vh]">
           <MidSection />
         </section>
 
-        <section className="h-[40vh]">
+        <section className="h-[80vh]">
           <Courses />
         </section>
       </main>
