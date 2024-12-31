@@ -1,27 +1,33 @@
 import { FC } from "react";
 import "./courses.component.sass";
-import Feature from "../../feature/feature.component";
+import Course, { ICourse } from "../../feature/course.component";
+
+const courses: ICourse[] = [
+  {
+    name: "1989 (Taylor's Version)",
+    subname: "Summer Conversational Club",
+    description: "Taylor Swift summer club",
+    price: "20.000$",
+    participantCount: 10,
+    decoration: {
+      color: "#79a7c3",
+      textColor: "#F4F4F4",
+    },
+  },
+];
 
 const Courses: FC = () => (
   <section className="ceramic-background">
-    <Feature
-      label="Cursos Interactivos"
-      description="Materiales dinámicos para aprender inglés de forma práctica"
-      icon="laptop.png"
-      color="#FFD700"
-    />
-    <Feature
-      label="Clubes de Conversación"
-      description="Practica inglés en grupos para mejorar fluidez y confianza"
-      icon="discman.png"
-      color="#FF69B4"
-    />
-    <Feature
-      label="Retroalimentación Personalizada"
-      description="Comentarios claros para mejorar tu nivel rápidamente"
-      icon="studying.png"
-      color="#FF6347"
-    />
+    {courses.map(course => (
+      <Course
+        name={course.name}
+        subname={course.subname}
+        description={course.description}
+        price={course.price}
+        participantCount={course.participantCount}
+        decoration={course.decoration}
+      ></Course>
+    ))}
   </section>
 );
 

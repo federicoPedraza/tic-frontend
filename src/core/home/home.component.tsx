@@ -11,10 +11,9 @@ const Home: FC = () => (
         </span>
         <span className="text-6xl font-impact font-bold">
           ¡Potencia tu inglés al{" "}
-          <span className="text-6xl font-impact font-bold text-[#FF7959]">máximo!</span>
-        </span>
-        <span className="text-4xl py-4 font-impact font-bold">
-          Aprende inglés de forma divertida haciendo amigos
+          <span className="text-6xl font-impact font-bold text-tomato">
+            máximo!
+          </span>
         </span>
       </div>
       <div className="flex flex-row gap-4">
