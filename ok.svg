@@ -1,0 +1,14 @@
+<svg
+    viewBox="0 0 400 30"
+    className="w-full h-6 -mt-4 absolute bottom-0 left-0"
+    preserveAspectRatio="none"
+  >
+    <path
+      d="M 0 20 C 80 10, 160 28, 240 20 S 320 8, 400 20"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="4"
+      strokeLinecap="round"
+      className="animate-dash"
+    />
+  </svg>
