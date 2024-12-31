@@ -6,6 +6,12 @@ import "./App.sass";
 
 function App() {
   return (
+    <div className="w-full p-0 m-0 h-full bg-black flex items-center justify-center">
+      <h1 className="text-white">Proximamente</h1>
+    </div>
+  );
+
+  return (
     <div className="crab-background relative flex flex-col">
       <header className="sticky top-0 z-50 w-full py-8 flex flex-row justify-center items-center">
         <div className="flex flex-row justify-between items-center w-3/4">
